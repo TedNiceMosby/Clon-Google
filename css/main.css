@@ -1,0 +1,292 @@
+/*Selector universal*/
+
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*HTML no tenga una decoración predeterminada*/
+    text-decoration: none;
+    /*Listas no tengan puntos*/
+    list-style: none;
+  
+}
+
+
+body{
+    background-color: white;
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+
+/*-------------NAVEGACIÓN-------------*/
+
+header{
+    /*Es recomendable usar los procentajes para que en todos los
+    dispositivos se vea igual*/
+    max-width:100%;
+    height: 60px;
+    width: 1600px;
+}
+
+header nav{
+    /*[flex] Para colocar los elementos en la posición que deseamos*/
+    display:flex;
+    justify-content: flex-end;
+}
+
+header nav .nav_right_section{
+    /*Alinear el contenido a la derecha*/
+    width: 240px;
+    /*Quitamos los puntos*/
+    list-style: none;
+    /*[flex] nos permite mover a la prosición que queramos*/
+    display:flex;
+    justify-content: center;
+    /*alineado verticalmente*/
+    align-items: center;
+    /*[org] height:auto*/
+    height:60px;
+}
+
+/*Editando anclas*/
+a{
+    /*Elimina las lineas del texto*/
+    text-decoration: none;
+
+}
+
+nav .nav_right_section a{
+    /*margin-right: 25px;*/
+    margin-left: 8px; /*Nos permite la separación 
+                        entre elementos*/
+    margin-top: 28.0px;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+}
+
+nav .nav_right_section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 21px;
+    height: 21px;
+    /*[background-size] la imagen va a estar contenida en el espacio que estableci previamente*/
+    background-size:contain;
+    /*Su función es no repetir*/
+    background-repeat: no-repeat;
+    margin-left: 11.5px;
+}
+
+nav .nav_right_section img{
+    width: 33.5px;
+    height: 33.5px;
+    /*Realizamos un margen, es decir el espacio*/
+    margin-left: 17px;
+    border-radius: 33px;
+}
+
+/*-----------------SECTION-BUSCADOR------------------*/
+
+main{
+    margin-top: 1%; /*margen de la parte de arriba*/
+    text-align: center;
+
+
+}
+
+main .main-Google{
+    /*530*/
+    width: 405px;
+    height:94px ;
+    /*[0] no margen arriba y abajo
+    [auto -alineado entre dereha e izquierda
+    */
+    margin: 0 auto;
+    margin-bottom:17px;/*nos ayuda separar el buscador y google*/
+}
+
+main .main-Google img{
+    height: 90px;
+}
+
+main .main-input{
+    width: 590px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    border: 1px solid #dfe1e5;/*Le colocamos un borde y un color*/
+    border-radius: 30px;/*Le colocamos bordes al buscador*/
+    /*525*/
+
+    width:590px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border:none;
+    outline: none;
+
+    width:480px;
+    height:40px;
+}
+
+
+/*dar la propiedad al colocar el mouse darle sombra*/
+main .main-input-container:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0 1px 6px 0px #20212447;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    background: contain;
+    height: 15px;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/640px-Google_mic.svg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height:20px;
+    padding-right:5%;
+    margin-right: 13px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .main-input .cam-icon{
+
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height:18px;
+    width: 14px;
+    padding-right:5%;
+    margin-right: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display:inline-block; /*Permite que ambas esten en la misma linea*/
+}
+
+main .main-buttons button{
+    border: 0;
+    background-color: #f8f9fa;
+    font-size: 15px;
+    color:#3c4043;
+    /*40*/
+    height: 34px;
+    /*Redondeado de botones*/
+    border-radius: 4px;
+    /*Margen interno*/
+    padding: 0 15px;
+    /*Margen con  botones*/
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-top: 20px;
+}
+
+main .main-buttons button:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0 1px 6px 0px #20212454;
+
+}
+
+
+/*--------------------FOOTER-------------------------------*/
+
+
+footer{
+ 
+    background-color: rgba(243, 241, 241, 0.856);
+    /*Para que se coloque en la parte de debajo el bottom*/
+    position:absolute;
+    bottom: 0;
+
+    justify-content: center;
+    text-align: justify;
+
+    width: 100%;
+    height: 95px;
+  
+}
+
+footer nav .footer-top{
+    max-width: 100%;
+    height: 35px;
+    margin-top: 15px;
+
+    margin-left: 28px;
+    border-bottom: 1px solid #ddd;
+} 
+
+/*
+
+hr{
+    border-color:rgb(243, 241, 241);
+    border-width: 0.1px;
+    
+}
+*/
+
+footer nav .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 40px;
+    padding: 15px;
+}
+
+footer nav .footer-bottom .footer-left{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+}
+
+footer nav .footer-bottom .footer-right{
+    display:flex;
+    align-items: center; 
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+/*[a] No son elementos de bloque son inline*/
+a{
+    margin-right: 14px;
+    font-size: 14px;
+    color: rgba(122, 121, 121, 0.87);
+}
+
+
